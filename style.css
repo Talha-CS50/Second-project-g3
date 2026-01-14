@@ -11,7 +11,7 @@
 .btn{
     background-color: #FF900E;
     color: #fff;
-    padding: 18px 35px;
+    padding: 18px 30px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -20,12 +20,14 @@
 /* Main CSS */
 
 .header-part{
-    background-color:rgba(255, 144, 14, 0.1)
+    background-color:rgba(255, 144, 14, 0.1);
+    padding-bottom: 30px;
+    
 }
 
 .navbar{
     display: flex;
-    width: 85%;
+    max-width: 85%;
     margin: 0 auto;
     justify-content: space-between;
     padding: 25px 5px;
@@ -53,7 +55,7 @@
 
 .banner{
     padding-top: 50px;
-    width: 85%;
+    max-width: 85%;
     margin: 0 auto;
 }
 .banner-content{
@@ -63,7 +65,7 @@
     margin: 0 auto;
 }
 .banner-content h1{
-    font-size: 4rempx;
+    font-size: 4rem;
     font-weight: bold;
     padding-bottom: 35px;
 }
@@ -77,7 +79,54 @@
     width: 100%;
 }
 
-/* Responsive CSS */
+/* Team part CSS */
+.team-container{
+    max-width: 85%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.team-img img{
+    width: 100%;
+}
+.team-content{
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 550px;
+}
+.team-content h1{
+    font-size: 45px;
+    font-weight: 600;
+}
+.team-content h1 .light-clr{
+    color: #727272;
+}
+.team-content h1 .deep-clr{
+    color: #131313;
+}
+.team-content h1 .orng-clr{
+    color: #FF900E;
+}
+
+.team-content p{
+    font-size: 16px;
+    color: #727272;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 25px 0px;
+}
+
+
+
+/* Responsive Media Query */
 
 @media screen and (max-width:576px) {
     .nav-menu ul{
@@ -87,5 +136,9 @@
     .logo h1{
         font-size: 2rem;
     }
-
+    .team-img{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    
 }
